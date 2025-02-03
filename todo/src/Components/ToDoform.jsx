@@ -13,7 +13,7 @@ const ToDoform = () => {
     if (toname === " ")
       return;
     if (!task.includes(toname)) {
-      setTask([...task, toname]) // state updated
+      setTask([...task, toname]) // old and new task
       e.target.reset() // clear input filed after submission
     }
     else {
